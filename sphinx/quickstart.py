@@ -584,7 +584,7 @@ def main(argv=sys.argv):
                      help='not create batchfile')
     group.add_option('-M', '--no-use-make-mode', action='store_false', dest='make_mode',
                      help='not use make-mode for Makefile/make.bat')
-    group.add_option('-m', '--use-make-mode', action='store_true', dest='make_mode',
+    group.add_option('-m', '--use-make-mode', action='store_true', dest='make_mode', default=True,
                      help='use make-mode for Makefile/make.bat')
 
     # parse options
